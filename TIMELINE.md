@@ -4,13 +4,13 @@
 - Finalize the core features (e.g., file upload, criteria selection, visualization types).
 - Define user roles (e.g., basic users, premium users with extra features).
 - Create wireframes/mockups of the user interface.
-### Week 3–4: Set Up the Development Environment
-- Choose the technology stack:
-  - Frontend: React.js (or Vue.js) for interactivity.
-  - Backend: Python Flask/Django or Node.js.
-  - Visualization: Plotly, D3.js, or Chart.js.
-- Set up version control (e.g., GitHub or GitLab).
-- Create a simple web page with file upload functionality as a prototype.
+### Week 3–4: Set Up the Development Environment & Chatbot
+- Choose tech stack (React.js for frontend, Python Flask/Django for backend).
+- Set up version control (e.g., GitHub).
+- Begin building the chatbot:
+- Implement chatbot functionality using libraries like Dialogflow, Rasa, or Botpress.
+- Integrate the chatbot into a simple web page.
+- Be ready with the chatbot within the first month Duration 
 #
 ## Month 2: Backend Development
 ### Week 1–2: CSV Handling
