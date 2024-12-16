@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashify - Transform Your Data</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@lottiefiles/lottie-player@1.5.6/dist/lottie-player.js"></script>
+    <style>
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .slide-up {
+            animation: slideUp 1.5s ease-in-out;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        video {
+            object-fit: cover;
+        }
+
+        .hover-button {
+            padding: 8px 16px;
+            border: 2px solid transparent;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .hover-button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-color: white;
+        }
+
+        #about, #upload, #contact {
+            background-color: #1a202c;
+            color: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+        }
+
+        #about a, #upload a, #contact a {
+            color: #63b3ed;
+        }
+
+        #about a:hover, #upload a:hover, #contact a:hover {
+            color: #90cdf4;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #63b3ed;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #3182ce;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Video Section with Navigation Menu -->
+    <div class="relative h-screen">
+        <!-- Video Background -->
+        <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
+            <source src="573279_Business_Stock_3840x2160.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white">
+            <!-- Dashify Name -->
+            <div class="absolute top-16 text-center">
+                <h1 class="text-5xl md:text-7xl font-extrabold">DASHIFY</h1>
+                <p class="text-lg font-medium mt-2">Transform Your Data Seamlessly</p>
+            </div>
+            <!-- Navigation Menu -->
+            <nav class="absolute top-4 right-8">
+                <ul class="flex space-x-6 text-lg font-semibold">
+                    <li><a href="#about" class="hover-button">About</a></li>
+                    <li><a href="#upload" class="hover-button">Upload Data</a></li>
+                    <li><a href="#contact" class="hover-button">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Centered Headline -->
+            <div class="text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Dashify: Empowering Data Visualization</h1>
+                <p class="text-lg font-medium">Transform raw data into dynamic dashboards in seconds.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <main class="container mx-auto px-6 py-12">
+        <section id="about" class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-6 fade-in">About Dashify</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="text-lg fade-in">
+                    <p class="mb-4">Dashify is a web-based platform designed to help users transform raw data into dynamic, interactive dashboards. Our mission is to make data visualization accessible to everyone, from business professionals to individual users.</p>
+                    <p class="mb-4">We are second-year students at VIT Chennai, passionate about simplifying the complexity of data analysis and empowering users with actionable insights.</p>
+                    <p>To learn more about us, visit:</p>
+                    <a href="https://www.linkedin.com/in/pranaykarvi/" class="button" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/Pranaykarvi" class="button" target="_blank">GitHub</a>
+                </div>
+                <div class="fade-in">
+                    <img src="D:/target/full_stack/tutorials/lecture_1/GitHub_Banner.jpg" alt="Data Science" class="rounded shadow-md">
+                </div>
+            </div>
+        </section>
+
+        <!-- Animation Section -->
+        <section class="mb-12">
+            <div class="text-center slide-up">
+                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_t9gkkhz4.json"  
+                               background="transparent"  
+                               speed="1"  
+                               style="width: 300px; height: 300px; margin: 0 auto;" 
+                               loop autoplay></lottie-player>
+                <div class="mt-6 relative">
+                    <h2 class="text-2xl font-bold fade-in mb-2">Transform Your Raw Data</h2>
+                    <p class="text-lg font-semibold text-gray-300 fade-in mb-2">Into Dynamic Visual Dashboards!</p>
+                    <p class="text-md text-gray-400 fade-in">Unlock the power of real-time analytics and decision-making.</p>
+                </div>
+                <div class="mt-6">
+                    <a href="#upload" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
+                        Start Uploading Data
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upload Section -->
+        <section id="upload" class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-6">Upload Your Data</h2>
+            <p class="text-center mb-6">Upload your CSV files or datasets below to start creating real-time, interactive dashboards.</p>
+            <form action="/upload" method="POST" enctype="multipart/form-data" class="bg-gray-800 p-6 rounded-lg shadow-lg space-y-4">
+                <input type="file" name="dataset" accept=".csv" required class="border border-gray-600 p-2 rounded w-full bg-gray-900 text-white">
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Upload</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-6">
+        <div class="container mx-auto text-center">
+            <p class="text-lg">Created by Pranay Karvi and Partner, 2nd-year students at VIT Chennai</p>
+            <p class="mt-4">Contact us at: <a href="mailto:dashify@example.com" class="underline text-blue-400">dashify@example.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
